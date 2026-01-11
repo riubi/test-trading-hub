@@ -1,0 +1,15 @@
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+*.egg
+data/
+db_meta.json
+__pycache__/
+*.py[cod]
+*$py.class
+.idea/
+poetry.lock
+*.cast
+logs/

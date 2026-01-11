@@ -1,0 +1,46 @@
+[project]
+name = "finalproject-papina-m25-555"
+version = "0.1.0"
+description = "Trade Hub - Console currency wallet application"
+authors = [
+    {name = "Papina Ruslan", email = "clu@tut.by"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "prettytable>=3.9.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+project = "trade_hub.main:main"
+
+[tool.poetry]
+name = "finalproject-papina-m25-555"
+version = "0.1.0"
+description = "Trade Hub - Console currency wallet application"
+authors = ["Papina Ruslan <clu@tut.by>"]
+readme = "README.md"
+packages = [{include = "trade_hub"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+prettytable = "^3.9.0"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.0"
+
+[tool.poetry.scripts]
+project = "trade_hub.main:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
